@@ -1,6 +1,6 @@
 [submodule "JSON-js"]
 	path = JSON-js
 	url = https://github.com/douglascrockford/JSON-js.git
-[submodule "js/namespace"]
-	path = js/namespace
-	url = git://github.com/jweir/namespace.git
+[submodule "namespace"]
+	path = namespace
+	url = git://github.com/maximebf/Namespace.js.git
