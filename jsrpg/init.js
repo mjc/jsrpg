@@ -18,17 +18,21 @@
  */
 
 Namespace.baseuri = "./";
+(function() {
+  /**
+   * @TODO make this less hacky.
+   */
+  Namespace.include("jsrpg.buffer");
+  Namespace.include("jsrpg.layers");
+  Namespace.include("jsrpg.ticker");
+  Namespace.from("jsrpg.base").use("jsrpg");
+  jsrpg.init("#display");
 
-jQuery.ready(function() {
-  Namespace.from("jsrpg.base").use("jsrpg",function(){console.log("foo");});
-  console.log(jsrpg);
-  init("#display");
+  jsrpg.ticker("#msg","Welcome to the JSRPG map editor!");
 
-  ticker("#msg","Welcome to the JSRPG map editor!");
-
-  buffer.context.strokeStyle = "black";
-  layers.bg.linearVerticalGradient();
-  layers.fg.whiteVerticalGradient();
+  jsrpg.buffer.context.strokeStyle = "black";
+  //jsrpg.layers.bg.context.linearVerticalGradient();
+  //jsrpg.layers.fg.context.whiteVerticalGradient();
 
   // graphics.init();
-});
+})();
