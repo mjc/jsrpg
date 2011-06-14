@@ -12,8 +12,6 @@
 
   var canvas = null;
 
-  var canvasContext = null;
-
   function state(name,value) {
     if (value == null && name in states) {
       return states[name];
@@ -22,10 +20,11 @@
       states[name] = value;
       return true;
     }
-  }
+  };
 
   jsrpg.init = function(selector) {
-    Namespace.use(["jsrpg","jsrpg.buffer","jsrpg.viewport"]);
+    Namespace.use(["jsrpg.buffer","jsrpg.viewport"]);
+    buffer.move(1,1);
 
     buffer.width  = viewport.width << 1;
     buffer.height = viewport.height << 1;

@@ -9,7 +9,7 @@
     <title>Canvas Test!</title>
 </head>
 <body>
-    <div id="game" class="gameview">
+  <div id="game" class="gameview">
         <canvas id="bg"></canvas>
         <canvas id="display">
             <p>Your browser does not support HTML5 canvas. Get Chrome.</p>
@@ -33,7 +33,8 @@
     </div>
     <script type="application/javascript" src="namespace/Namespace.js"></script>
     <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <!-- <script type="application/javascript" src="jsrpg/base.js"></script> -->
-    <script type="application/javascript" src="jsrpg/init.js"></script>
+    <script type="application/javascript">
+      Namespace.include("jsrpg.init",function() { jsrpg.init("#display"); });
+    </script>
 </body>
 </html>
