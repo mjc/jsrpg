@@ -3,21 +3,21 @@ var terrainImage = new Image();
 terrainImage.src = "img/terrain.png";
 
 // Tile settings
-const tileWidth = 64;
-const tileHeight = 32;
-const tileBorder = 2;
+var tileWidth = 64;
+var tileHeight = 32;
+var tileBorder = 2;
 
 // Names of each tile for the editor
 terrainNames = ["grass", "night", "black", "grass",
                 "grass", "grass", "grass", "grass",
                 "grass", "grass", "grass", "grass"];
 
-const mouseOverSelection = 1;
-const secondarySelectionSprite = 1;
-const shadowMaskTile = 2;
+var mouseOverSelection = 1;
+var secondarySelectionSprite = 1;
+var shadowMaskTile = 2;
 
-const tileGraphicWidth = 64;
-const tileGraphicHeight = 50;
-const tileSheetWidth = 4;
-const tileSheetHeight = 3;
+var tileGraphicWidth = 64;
+var tileGraphicHeight = 50;
+var tileSheetWidth = 4;
+var tileSheetHeight = 3;
 
